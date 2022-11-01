@@ -19,7 +19,11 @@ def load_csv(filename):
 
 
 def daily_mean(data):
-    """Calculate the daily mean of a 2D inflammation data array."""
+    """Calculate the daily mean of a 2D inflammation data array.
+    
+    :param data: The data to calculate the mean of
+    :returns: Mean of data along 0-axis
+    """
     return np.mean(data, axis=0)
 
 
